@@ -1,0 +1,14 @@
+{
+    "jdk.jdkhome": "C:\\Program Files\\Eclipse Adoptium",
+    "java.jdt.ls.java.home": "C:\\Program Files\\Eclipse Adoptium",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-25",
+            "path": "C:\\Program Files\\Eclipse Adoptium"
+        }
+    ],
+    "java.project.sourcePaths": [
+        "src"
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive"
+}
