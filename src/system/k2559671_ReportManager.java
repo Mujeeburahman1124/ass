@@ -15,7 +15,7 @@ public class k2559671_ReportManager {
     }
 
     public List<k2559671_Book> generateMostBorrowedBooks() {
-        System.out.println("\n === MOST BORROWED BOOKS REPORT ===");
+        System.out.println("\n=== MOST BORROWED BOOKS REPORT ===");
         List<k2559671_Book> books = librarySystem.getAllBooks();
 
         // Sort by borrow history size (in real implementation)

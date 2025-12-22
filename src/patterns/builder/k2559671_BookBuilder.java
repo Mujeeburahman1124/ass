@@ -5,7 +5,7 @@ import domain.k2559671_BookMetadata;
 
 /**
  * Builder Pattern: Book builder for creating complex book objects.
- * 
+ *
  * Pattern Justification:
  * - Books have many optional parameters (metadata, reviews, tags, etc.)
  * - Provides a fluent interface for book creation

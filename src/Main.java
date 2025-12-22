@@ -22,10 +22,10 @@ import system.k2559671_LibrarySystem;
 
 /**
  * Main class - Demonstrates all 6 design patterns in the Smart Library Management System.
- * 
+ *
  * Student ID: k2559671
  * Kingston University - CI6115 PROGRAMMING III
- * 
+ *
  * Design Patterns Demonstrated:
  * 1. Observer Pattern - Notification system
  * 2. Strategy Pattern - Fine calculation
@@ -102,15 +102,15 @@ public class Main {
         
         // Create users with different membership types
         k2559671_User student = new k2559671_User("U001", "Alice Johnson", "alice@student.com", 
-                                                   "0771234567", k2559671_MembershipType.STUDENT);
+                                            "0771234567", k2559671_MembershipType.STUDENT);
         student.setFineStrategy(new k2559671_StudentFineStrategy());
         
         k2559671_User faculty = new k2559671_User("U002", "Dr. Bob Smith", "bob@faculty.com", 
-                                                   "0777654321", k2559671_MembershipType.FACULTY);
+                                                "0777654321", k2559671_MembershipType.FACULTY);
         faculty.setFineStrategy(new k2559671_FacultyFineStrategy());
         
         k2559671_User guest = new k2559671_User("U003", "Charlie Brown", "charlie@guest.com", 
-                                                 "0779876543", k2559671_MembershipType.GUEST);
+                                                "0779876543", k2559671_MembershipType.GUEST);
         guest.setFineStrategy(new k2559671_GuestFineStrategy());
         
         library.addUser(student);
@@ -203,8 +203,8 @@ public class Main {
         
         System.out.println("\n╔═══════════════════════════════════════════════════════════╗");
         System.out.println("║  ALL 6 DESIGN PATTERNS SUCCESSFULLY DEMONSTRATED!        ║");
-        System.out.println("║  ✓ Observer   ✓ Strategy   ✓ State                       ║");
-        System.out.println("║  ✓ Command    ✓ Decorator  ✓ Builder                     ║");
+        System.out.println("║   Observer    Strategy    State                       ║");
+        System.out.println("║   Command     Decorator   Builder                     ║");
         System.out.println("╚═══════════════════════════════════════════════════════════╝");
     }
 }

@@ -42,8 +42,8 @@ public class k2559671_Fine {
     
     public String getFineDetails() {
         return "Fine #" + fineId + " - Amount: LKR " + amount + 
-               ", User: " + userId + ", Book: " + bookId + 
-               ", Paid: " + (isPaid ? "Yes" : "No");
+        ", User: " + userId + ", Book: " + bookId + 
+        ", Paid: " + (isPaid ? "Yes" : "No");
     }
     
     public void setAmount(double amount) {
