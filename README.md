@@ -48,13 +48,9 @@ javac -d bin src/**/*.java
 java -cp bin Main
 ```
 
-## Important Notes
-⚠️ **REPLACE K0000000 with your Kingston University Student ID in ALL class names!**
-
-## Academic Integrity
 This project was developed with AI assistance for planning and implementation guidance.
 All design decisions and pattern justifications are documented in the accompanying report.
 
 ## Author
-[Your Name] - [Your Student ID]
+[Aqeela] - [k2559671]
 Kingston University - BSc (Hons) Computing (Top-up)
