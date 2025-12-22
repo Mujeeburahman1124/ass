@@ -54,57 +54,26 @@ public class InteractiveMain {
             int choice = getIntInput("Enter your choice: ");
 
             switch (choice) {
-                case 1:
-                    addBook();
-                    break;
-                case 2:
-                    addUser();
-                    break;
-                case 3:
-                    viewAllBooks();
-                    break;
-                case 4:
-                    viewAllUsers();
-                    break;
-                case 5:
-                    borrowBook();
-                    break;
-                case 6:
-                    returnBook();
-                    break;
-                case 7:
-                    reserveBook();
-                    break;
-                case 8:
-                    decorateBook();
-                    break;
-                case 9:
-                    calculateFine();
-                    break;
-                case 10:
-                    viewNotifications();
-                    break;
-                case 11:
-                    sendNotification();
-                    break;
-                case 12:
-                    undoLastCommand();
-                    break;
-                case 13:
-                    generateReports();
-                    break;
-                case 14:
-                    runDemo();
-                    break;
-                case 15:
-                    viewAllReservations();
-                    break;
-                case 0:
+                case 1 -> addBook();
+                case 2 -> addUser();
+                case 3 -> viewAllBooks();
+                case 4 -> viewAllUsers();
+                case 5 -> borrowBook();
+                case 6 -> returnBook();
+                case 7 -> reserveBook();
+                case 8 -> decorateBook();
+                case 9 -> calculateFine();
+                case 10 -> viewNotifications();
+                case 11 -> sendNotification();
+                case 12 -> undoLastCommand();
+                case 13 -> generateReports();
+                case 14 -> runDemo();
+                case 15 -> viewAllReservations();
+                case 0 -> {
                     running = false;
                     System.out.println("\n✓ Thank you for using the Library Management System!");
-                    break;
-                default:
-                    System.out.println("\n⚠ Invalid choice. Please try again.");
+                }
+                default -> System.out.println("\n⚠ Invalid choice. Please try again.");
             }
         }
 
