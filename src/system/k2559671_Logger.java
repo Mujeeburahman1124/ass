@@ -12,9 +12,9 @@ import patterns.command.k2559671_Command;
  * Maintains a history of all actions for auditing purposes.
  */
 public class k2559671_Logger {
-    private List<String> logHistory;
-    private String logFile;
-    private SimpleDateFormat dateFormat;
+    private final List<String> logHistory;
+    private final String logFile;
+    private final SimpleDateFormat dateFormat;
     
     public k2559671_Logger() {
         this.logHistory = new ArrayList<>();

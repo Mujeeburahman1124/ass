@@ -7,9 +7,9 @@ import domain.k2559671_User;
  * Manages books and users in the system.
  */
 public class k2559671_Librarian {
-    private String librarianId;
-    private String name;
-    private String email;
+    private final String librarianId;
+    private final String name;
+    private final String email;
 
     public k2559671_Librarian(String librarianId, String name, String email) {
         this.librarianId = librarianId;

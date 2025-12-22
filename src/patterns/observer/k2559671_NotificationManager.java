@@ -1,17 +1,18 @@
 package patterns.observer;
 
-import domain.k2559671_User;
-import domain.k2559671_Book;
 import java.util.ArrayList;
 import java.util.List;
+
+import domain.k2559671_Book;
+import domain.k2559671_User;
 
 /**
  * Observer Pattern: Notification manager (Subject).
  * Manages observers and sends notifications about library events.
  */
 public class k2559671_NotificationManager {
-    private List<k2559671_Observer> observers;
-    private List<String> notifications;
+    private final List<k2559671_Observer> observers;
+    private final List<String> notifications;
     
     public k2559671_NotificationManager() {
         this.observers = new ArrayList<>();

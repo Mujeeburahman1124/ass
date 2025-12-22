@@ -1,8 +1,12 @@
 package system;
 
-import domain.*;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import domain.k2559671_Book;
+import domain.k2559671_BorrowRecord;
+import domain.k2559671_Fine;
+import domain.k2559671_User;
 
 /**
  * ReportManager generates various reports for the library system.

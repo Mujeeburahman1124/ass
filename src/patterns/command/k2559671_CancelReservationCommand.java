@@ -8,8 +8,8 @@ import system.k2559671_Logger;
  * Encapsulates the action of cancelling a book reservation.
  */
 public class k2559671_CancelReservationCommand implements k2559671_Command {
-    private k2559671_Reservation reservation;
-    private k2559671_Logger logger;
+    private final k2559671_Reservation reservation;
+    private final k2559671_Logger logger;
     private boolean executed;
     private String previousStatus;
     

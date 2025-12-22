@@ -28,19 +28,19 @@ import patterns.observer.k2559671_NotificationManager;
  */
 public class k2559671_LibrarySystem {
     // HashMap for fast O(1) lookups by ID
-    private Map<String, k2559671_Book> bookMap;
-    private Map<String, k2559671_User> userMap;
+    private final Map<String, k2559671_Book> bookMap;
+    private final Map<String, k2559671_User> userMap;
     
     // ArrayList for maintaining collections
-    private List<k2559671_Book> books;
-    private List<k2559671_User> users;
-    private List<k2559671_BorrowRecord> borrowRecords;
-    private List<k2559671_Reservation> reservations;
-    private List<k2559671_Fine> fines;
+    private final List<k2559671_Book> books;
+    private final List<k2559671_User> users;
+    private final List<k2559671_BorrowRecord> borrowRecords;
+    private final List<k2559671_Reservation> reservations;
+    private final List<k2559671_Fine> fines;
     
-    private k2559671_NotificationManager notificationManager;
-    private k2559671_ReportManager reportManager;
-    private k2559671_Logger logger;
+    private final k2559671_NotificationManager notificationManager;
+    private final k2559671_ReportManager reportManager;
+    private final k2559671_Logger logger;
 
     public k2559671_LibrarySystem() {
         // Initialize HashMaps for efficient lookups
