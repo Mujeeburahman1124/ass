@@ -203,22 +203,23 @@ public class InteractiveMain {
         k2559671_FineStrategy fineStrategy;
 
         switch (typeChoice) {
-            case 1:
+            case 1 -> {
                 membershipType = k2559671_MembershipType.STUDENT;
                 fineStrategy = new k2559671_StudentFineStrategy();
-                break;
-            case 2:
+            }
+            case 2 -> {
                 membershipType = k2559671_MembershipType.FACULTY;
                 fineStrategy = new k2559671_FacultyFineStrategy();
-                break;
-            case 3:
+            }
+            case 3 -> {
                 membershipType = k2559671_MembershipType.GUEST;
                 fineStrategy = new k2559671_GuestFineStrategy();
-                break;
-            default:
+            }
+            default -> {
                 System.out.println("Invalid choice. Defaulting to STUDENT.");
                 membershipType = k2559671_MembershipType.STUDENT;
                 fineStrategy = new k2559671_StudentFineStrategy();
+            }
         }
 
         k2559671_User user = new k2559671_User(userId, name, email, phone, membershipType);
@@ -412,24 +413,23 @@ public class InteractiveMain {
         int choice = getIntInput("Select decorator (1-3): ");
 
         switch (choice) {
-            case 1:
+            case 1 -> {
                 k2559671_FeaturedDecorator featured = new k2559671_FeaturedDecorator(book);
                 System.out.println("\n" + featured.getDescription());
-                break;
-            case 2:
+            }
+            case 2 -> {
                 int rating = getIntInput("Enter rating (1-10): ");
                 String professor = getStringInput("Professor name: ");
                 k2559671_RecommendedDecorator recommended = new k2559671_RecommendedDecorator(book, rating, professor);
                 System.out.println("\n" + recommended.getDescription());
-                break;
-            case 3:
+            }
+            case 3 -> {
                 String feature = getStringInput("Special feature: ");
                 int edition = getIntInput("Edition number: ");
                 k2559671_SpecialEditionDecorator special = new k2559671_SpecialEditionDecorator(book, feature, edition);
                 System.out.println("\n" + special.getDescription());
-                break;
-            default:
-                System.out.println("Invalid choice.");
+            }
+            default -> System.out.println("Invalid choice.");
         }
     }
 
@@ -444,21 +444,14 @@ public class InteractiveMain {
         int choice = getIntInput("Select report (1-4): ");
 
         switch (choice) {
-            case 1:
-                library.getReportManager().generateMostBorrowedBooks();
-                break;
-            case 2:
-                library.getReportManager().generateActiveBorrowers();
-                break;
-            case 3:
-                library.getReportManager().generateRevenueReport();
-                break;
-            case 4:
+            case 1 -> library.getReportManager().generateMostBorrowedBooks();
+            case 2 -> library.getReportManager().generateActiveBorrowers();
+            case 3 -> library.getReportManager().generateRevenueReport();
+            case 4 -> {
                 String userId = getStringInput("Enter User ID: ");
                 library.getReportManager().generateUserReport(userId);
-                break;
-            default:
-                System.out.println("Invalid choice.");
+            }
+            default -> System.out.println("⚠ Invalid choice!");
         }
     }
 
@@ -671,7 +664,7 @@ public class InteractiveMain {
         }
         
         switch (type) {
-            case 1:
+            case 1 -> {
                 if (library.getAllBooks().isEmpty()) {
                     System.out.println(" No books in the system.");
                     return;
@@ -685,8 +678,8 @@ public class InteractiveMain {
                 } else {
                     System.out.println("⚠ Book not found!");
                 }
-                break;
-            case 2:
+            }
+            case 2 -> {
                 if (library.getAllBooks().isEmpty()) {
                     System.out.println("⚠ No books in the system.");
                     return;
@@ -700,8 +693,8 @@ public class InteractiveMain {
                 } else {
                     System.out.println("⚠ Book not found!");
                 }
-                break;
-            case 3:
+            }
+            case 3 -> {
                 if (library.getAllBooks().isEmpty()) {
                     System.out.println("⚠ No books in the system.");
                     return;
@@ -715,14 +708,13 @@ public class InteractiveMain {
                 } else {
                     System.out.println("⚠ Book not found!");
                 }
-                break;
-            case 4:
+            }
+            case 4 -> {
                 String customMessage = getStringInput("\nEnter custom message: ");
                 user.update(customMessage);
                 System.out.println("\n✓ Custom notification sent!");
-                break;
-            default:
-                System.out.println("⚠ Invalid notification type!");
+            }
+            default -> System.out.println("⚠ Invalid notification type!");
         }
         
         System.out.println("\n✓ Observer Pattern Applied: User notified successfully");
